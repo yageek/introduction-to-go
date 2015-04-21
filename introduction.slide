@@ -1,0 +1,89 @@
+The Go programming language
+A fast smooth introduction to the language
+15:04 2 Jan 2006
+Tags: golang, introduction, discovery
+
+Yannick Heinrich
+Software Developer, OpenWeb Technology
+blog@yageek.net
+http://blog.yageek.net
+@yageek
+
+
+* Go history
+
+- Project started as internal project at Google in 2007
+- Open-sourced in 2009 with a BSD-style license
+- Last stable release 1.4.2 (2014/12/10)
+
+.image ./images/gophers.png
+.caption _Gopher_ by [[http://www.reneefrench.com][Renée French]]
+
+* Go is blessed by the Gods
+
+- Kenneth Thomson (Unix, C, UTF-8, Plan 9, Turing Award 1983)
+- Rob Pike (Unix, UTF-8, Plan 9, Inferno)
+- Robert Griesemer (Java HotSpot, Google v8)
+
+* Go is your friend
+
+- Open-Source (again!)
+- Linux, Mac Os X, FreeBSD, NetBSD, OpenBSD, MS-Windows and Plan 9 (just in case)
+- Cross-compilation nearly fo free
+- No bytecode
+- Fast compilation
+
+* Who uses Go?
+
+Internet:
+- [[http://code.google.com/p/vitess/][Youtube]], [[http://blog.disqus.com/post/51155103801/trying-out-this-go-thing][Disqus]], [[https://github.com/tumblr/gocircuit][Tumblr]], [[http://blog.twitch.tv/2014/04/technically-speaking-group-chat-and-general-chat-engineering/][Twitch]]
+
+Nerds:
+- [[http://techno-weenie.net/2013/11/2/key-value-logs-in-go/][Github]], [[https://sourcegraph.com/][Sourcegraph]]
+
+Lightweight virtualization:
+- [[https://www.docker.com/][Docker]]
+
+UFOS:
+- [[http://www.quora.com/Go-programming-language/Is-Google-Go-ready-for-production-use/answer/Kunal-Anand][BBC]], [[https://plus.google.com/114945221884326152379/posts/d1SVaqkRyTL][Novartis]], [[https://groups.google.com/forum/?fromgroups#!topic/golang-nuts/ikt3hcIqicA][Thomson Reuters]]
+
+Candy brewer:
+- [[http://code.zynga.com/2013/08/zbase-a-high-performance-elastic-distributed-key-value-store/][Zynga]]
+
+
+.link https://code.google.com/p/go-wiki/wiki/GoUsers More Golang Users 
+.caption The growth of Google searches for the term "golang" over the years (until 2013)
+* Gopher is the new hipster
+
+- Interest is growing good
+.image ./images/growth_search.png _ 600
+
+- Dozen of Go User Groups
+- Big meetings: dotGo, GopherIndia, Gotham, GopherCon, GoCon
+
+
+* Some Benefits of Go
+
+- Fast compilation (again!)
+- Static linking only: *production*is*always*a*unique*executable*
+- Cross-Compilation
+- No JVM: Reduces memory impacts
+- No JVM: *native*code*
+- For lazy people: interface with existing C libraries
+- For smart people: "easy" to fine tune with Assembly (Plan 9)
+- Garbage Collector 
+- Lightweight threads for concurrency
+- Synchronisation based on [[http://spinroot.com/courses/summer/Papers/hoare_1978.pdf][CSP]] (like Erlang, Rust, Akka in Scala)
+
+* Adopt Go !
+
+Iron.io rewrites their execution job system in go:
+
+- Dropped from 30 to 2 servers and the second server was used only for redundancy.
+- CPU utilization dropped to less than 5%.
+- Memory usage dropped. Only a "few hundred KB's of memory (on startup) vs our Rails apps which were ~50MB (on startup)". 
+.link http://blog.iron.io/2013/03/how-we-went-from-30-servers-to-2-go.html Iron.IO - How We Went from 30 Servers to 2: Go
+
+.link https://www.youtube.com/watch?t=21&v=mBy20FgB68Q GopherCon 2014 From Node.js to Go by Kelsey Falter
+
+
