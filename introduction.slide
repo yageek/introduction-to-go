@@ -10,6 +10,7 @@ http://blog.yageek.net
 @yageek
 
 
+* Go AFK
 * Go history
 
 - Project started as internal project at Google in 2007
@@ -85,5 +86,25 @@ Iron.io rewrites their execution job system in go:
 .link http://blog.iron.io/2013/03/how-we-went-from-30-servers-to-2-go.html Iron.IO - How We Went from 30 Servers to 2: Go
 
 .link https://www.youtube.com/watch?t=21&v=mBy20FgB68Q GopherCon 2014 From Node.js to Go by Kelsey Falter
+
+* Go from the trench
+
+* Hello world
+
+.play ./code/hello_world.go
+
+* Basic types and variable declaration
+
+.play ./code/basic_type.go
+
+* Loop with for
+
+.code ./code/for.go
+
+* Switch
+.code ./code/test.go
+
+* Array, Slices and Map
+
 
 
