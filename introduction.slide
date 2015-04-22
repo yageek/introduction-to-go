@@ -71,6 +71,7 @@ Iron.io rewrites their execution job system in go:
 - Polyglott
 - Garbage Collected
 - Tolerant
+- Strongly typed
 
 * Native and static compiled
 
@@ -122,6 +123,11 @@ For smart people: easy to fine tune with assembly
 
 .image ./images/assembly.png 200 _
 .code ./code/arith_386.s
+
+* Strongly typed
+
+- If it compiles, it works (usage of reflection excepted)
+- All cast are explicited
 
 * Go from the trench
 
@@ -182,13 +188,28 @@ _Syntax_is_not_important..._-_unless_you_are_a_programmer_, Rob Pike
 	    "code.google.com/p/go-avltree"
 	  )
            
-`$`go`get`[import]
+`$`go`get`[import]`
 
 * Error management
+.play ./code/errors.go
+
 * Deferring 
+.play ./code/deferring.go
+
 * Closures
+.play ./code/closures.go
+
 * Custom type
+
+.play ./code/custom_types.go
+
+* Custom type
+
+.play ./code/custom_types_2.go
+
 * Interface and Duck typing
+- _When_I_see_a_bird_that_walks_like_a_duck_and_swims_like_a_duck_and_quacks_like_a_duck,_I_call_that_bird_a_duck_  James Whitcomb Riley
+
 * Composition over inheritance
 * Concurrency
 * Goroutine
@@ -198,6 +219,14 @@ _Syntax_is_not_important..._-_unless_you_are_a_programmer_, Rob Pike
 * And a free case
 * And free samples
 * Demo
-* Frameworks 
+
+* Libraries
+
+- [[https://github.com/avelino/awesome-go][Awesome go]]
+- Full Stack Web frameworks: Beego, Revel, Martini (Reflection)
+- HTTP Midlewares based framework: negroni
+- Abuse of HTTP midlewares
+- My recommandation to start : pat (muxer), negroni(HTTP middlewares) and gorilla packages (context, sessions)
+
 * References
 * Questions
