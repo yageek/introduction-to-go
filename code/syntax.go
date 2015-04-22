@@ -3,5 +3,5 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello, 世界") // Full UTF-8
+	fmt.Println("Hello, 世界")
 }

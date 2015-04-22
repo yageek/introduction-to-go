@@ -1,6 +1,6 @@
 The Go programming language
 A fast smooth introduction to the language
-15:04 2 Jan 2006
+15:04 24 Apr 2015
 Tags: golang, introduction, discovery
 
 Yannick Heinrich
@@ -22,8 +22,8 @@ http://blog.yageek.net
 
 * Go is blessed by the Gods
 
+- Rob Pike (Golang Project Leader, Unix, UTF-8, Plan 9, Inferno)
 - Kenneth Thomson (Unix, C, UTF-8, Plan 9, Turing Award 1983)
-- Rob Pike (Unix, UTF-8, Plan 9, Inferno)
 - Robert Griesemer (Java HotSpot, Google v8)
 
 * Who uses Go?
@@ -45,11 +45,12 @@ Candy brewer:
 
 
 .link https://code.google.com/p/go-wiki/wiki/GoUsers More Golang Users 
-.caption The growth of Google searches for the term "golang" over the years (until 2013)
+
 * Gopher is the new hipster
 
 - Interest is growing good
-.image ./images/growth_search.png _ 600
+.image ./images/growth_search.png _ 700
+.caption The growth of Google searches for the term "golang" over the years
 
 - Dozen of Go User Groups
 - Big meetings: dotGo, GopherIndia, Gotham, GopherCon, GoCon
@@ -124,10 +125,35 @@ For smart people: easy to fine tune with assembly
 
 * Go from the trench
 
-* Hello world
+* One syntax to rule them all
 
-.play ./code/hello_world.go
+_Syntax_is_not_important..._-_unless_you_are_a_programmer_, Rob Pike
 
+	package main ; import "fmt" ; func main() { 
+	fmt.Println("Hello, 世界"); }
 
+`$`go`fmtmain.go`
 
+.play ./code/syntax.go
 
+- Annoying at start
+- Fucking good at the end
+- `go`fmt` could be easily integrated with Vim, Sublime Text or Atom
+
+* Variables
+
+.play ./code/variables.go
+
+* Functions
+
+.play ./code/functions.go
+
+* Flow control : if else
+
+.play ./code/flow_control_1.go
+
+* Flow control : switch
+
+.play ./code/flow_control_2.go
+
+* Array/Slices
