@@ -81,14 +81,26 @@ Iron.io rewrites their execution job system in go:
 * Polyglott
 
 - Linux, Mac Os X, FreeBSD, NetBSD, OpenBSD, MS-Windows and Plan 9 (just in case)
-- Official supported architectures : x86, amd64, arm32, arm64
-- Cross compilation fast for free
+- Official supported architectures : x86, amd64, arm32, arm64 - Cross compilation for free
 
 	$ GOOS=windows GOARCH=386 go build main.go
 	$ GOOS=darwin GOARCH=amd64 go build main.go
 	$ GOOS=freebds GOARCH=arm GOARM=5 go build main.go
 
-- Smart preprocessing statements to target specific OS 
+- Smart build constraints
+
+	// +build linux,386 darwin,!cgo
+
+	// File name constraints:
+	// *_GOOS
+	// *_GOARCH
+	// *_GOOS_GOARCH
+
+* Polyglott
+
+Example: The `os` package
+
+.image ./images/build_constraints.png _ 500
 
 * Garbage Collected
 
@@ -99,10 +111,16 @@ Iron.io rewrites their execution job system in go:
 
 * Tolerant
 
-- For lazy person: easy to work with C code with `cgo`
+For lazy person: easy to work with C code with `cgo`
+
 .code ./code/cgo.go
 
-- For smart people: easy to fine tune with assembly
+* Tolerant
+
+For smart people: easy to fine tune with assembly
+
+.image ./images/assembly.png 200 _
+.code ./code/arith_386.s
 
 * Go from the trench
 
@@ -110,18 +128,6 @@ Iron.io rewrites their execution job system in go:
 
 .play ./code/hello_world.go
 
-* Basic types and variable declaration
-
-.play ./code/basic_type.go
-
-* Loop with for
-
-.code ./code/for.go
-
-* Switch
-.code ./code/test.go
-
-* Array, Slices and Map
 
 
 
