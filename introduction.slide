@@ -26,18 +26,10 @@ http://blog.yageek.net
 - Rob Pike (Unix, UTF-8, Plan 9, Inferno)
 - Robert Griesemer (Java HotSpot, Google v8)
 
-* Go is your friend
-
-- Open-Source (again!)
-- Linux, Mac Os X, FreeBSD, NetBSD, OpenBSD, MS-Windows and Plan 9 (just in case)
-- Cross-compilation nearly fo free
-- No bytecode
-- Fast compilation
-
 * Who uses Go?
 
 Internet:
-- [[http://code.google.com/p/vitess/][Youtube]], [[http://blog.disqus.com/post/51155103801/trying-out-this-go-thing][Disqus]], [[https://github.com/tumblr/gocircuit][Tumblr]], [[http://blog.twitch.tv/2014/04/technically-speaking-group-chat-and-general-chat-engineering/][Twitch]]
+- [[http://code.google.com/p/vitess/][Youtube]], [[http://blog.disqus.com/post/51155103801/trying-out-this-go-thing][Disqus]], [[https://github.com/tumblr/gocircuit][Tumblr]], [[http://blog.twitch.tv/2014/04/technically-speaking-group-chat-and-general-chat-engineering/][Twitch]], Heroku, Cloudfare, SoundCloud, Scalingo
 
 Nerds:
 - [[http://techno-weenie.net/2013/11/2/key-value-logs-in-go/][Github]], [[https://sourcegraph.com/][Sourcegraph]]
@@ -62,20 +54,6 @@ Candy brewer:
 - Dozen of Go User Groups
 - Big meetings: dotGo, GopherIndia, Gotham, GopherCon, GoCon
 
-
-* Some Benefits of Go
-
-- Fast compilation (again!)
-- Static linking only: *production*is*always*a*unique*executable*
-- Cross-Compilation
-- No JVM: Reduces memory impacts
-- No JVM: *native*code*
-- For lazy people: interface with existing C libraries
-- For smart people: "easy" to fine tune with Assembly (Plan 9)
-- Garbage Collector 
-- Lightweight threads for concurrency
-- Synchronisation based on [[http://spinroot.com/courses/summer/Papers/hoare_1978.pdf][CSP]] (like Erlang, Rust, Akka in Scala)
-
 * Adopt Go !
 
 Iron.io rewrites their execution job system in go:
@@ -86,6 +64,45 @@ Iron.io rewrites their execution job system in go:
 .link http://blog.iron.io/2013/03/how-we-went-from-30-servers-to-2-go.html Iron.IO - How We Went from 30 Servers to 2: Go
 
 .link https://www.youtube.com/watch?t=21&v=mBy20FgB68Q GopherCon 2014 From Node.js to Go by Kelsey Falter
+
+* Go is your best friend
+
+- Polyglott
+- Garbage Collected
+- Tolerant
+
+* Native and static compiled
+
+- No f*** JVM
+- Fast compilation, as fast as scripting
+- No shared libraries
+- All stuff packaged in one binary, runtime included
+
+* Polyglott
+
+- Linux, Mac Os X, FreeBSD, NetBSD, OpenBSD, MS-Windows and Plan 9 (just in case)
+- Official supported architectures : x86, amd64, arm32, arm64
+- Cross compilation fast for free
+
+	$ GOOS=windows GOARCH=386 go build main.go
+	$ GOOS=darwin GOARCH=amd64 go build main.go
+	$ GOOS=freebds GOARCH=arm GOARM=5 go build main.go
+
+- Smart preprocessing statements to target specific OS 
+
+* Garbage Collected
+
+- No pointer arithmetics
+- No malloc, no free
+- Mark and Sweep GC
+# - Synchronisation based on [[http://spinroot.com/courses/summer/Papers/hoare_1978.pdf][CSP]] (like Erlang, Rust, Akka in Scala)
+
+* Tolerant
+
+- For lazy person: easy to work with C code with `cgo`
+.code ./code/cgo.go
+
+- For smart people: easy to fine tune with assembly
 
 * Go from the trench
 
