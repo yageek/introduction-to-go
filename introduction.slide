@@ -156,4 +156,48 @@ _Syntax_is_not_important..._-_unless_you_are_a_programmer_, Rob Pike
 
 .play ./code/flow_control_2.go
 
+* Flow control : for
+
+.play ./code/flow_control_3.go
+
 * Array/Slices
+
+.play ./code/array_slice.go
+
+* Map
+
+.play ./code/map.go
+
+* Dependencies manages with packages
+
+.code ./code/module/module.go
+.code ./code/packages.go
+
+* Retrieve external dependencies
+
+	import (
+	    "github.com/pmylund/go-cache"
+	    "launchpad.net/gnuflag"
+	    "bitbucket.org/taruti/ssh.go"
+	    "code.google.com/p/go-avltree"
+	  )
+           
+`$`go`get`[import]
+
+* Error management
+* Deferring 
+* Closures
+* Custom type
+* Interface and Duck typing
+* Composition over inheritance
+* Concurrency
+* Goroutine
+* Channel
+* Select
+* Go come with batteries included
+* And a free case
+* And free samples
+* Demo
+* Frameworks 
+* References
+* Questions
