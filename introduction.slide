@@ -109,7 +109,6 @@ Example: The `os` package
 - No pointer arithmetics
 - No malloc, no free
 - Mark and Sweep GC
-# - Synchronisation based on [[http://spinroot.com/courses/summer/Papers/hoare_1978.pdf][CSP]] (like Erlang, Rust, Akka in Scala)
 
 * Tolerant
 
@@ -236,12 +235,58 @@ _Syntax_is_not_important..._-_unless_you_are_a_programmer_, Rob Pike
 .play ./code/interfaces_3.go
 
 * Concurrency
+
+- Concurrency is not parallelism
+- Synchronisation based on [[http://spinroot.com/courses/summer/Papers/hoare_1978.pdf][CSP]] (like Erlang, Rust, Akka in Scala)
+- Use kind of _Green_Threads_ mapped on OS threads called *goroutine*
+- Simply call *go*
+
 * Goroutine
+.play ./code/goroutine.go
+
 * Channel
+
+.play ./code/channel.go
+
+* Channel
+
+.play ./code/channel_2.go
+
 * Select
+
+.play ./code/select.go
+
 * Go come with batteries included
+* The standard library covers fast all
+
+- SQL Database
+- Syscall
+- TCP/IP, FTP, HTTP, SMTP, 
+- JSON, XML, HTML, templating, CSV
+- Unicode
+- Image processing
+- Crypto: RSA, AES, DES, SHA, TLS, x509
+- Compression: bz2, gz, lzw, zip
+- Math
+- Go AST, debug, sytax
+- Reflection (introspection)
+- Testing framework (assertions)
 * And a free case
+
+A list of helpers tool (non exhaustive):
+- Format: fmt
+- Documentation: doc
+- Profiling: pprof
+- Code coverage: gcov
+- YACC clone: yacc
+- Migrations: fix
+
 * And free samples
+- Slideshow: present
+- Constant naming: stringer
+- Callgraph: callgraph
+- Static analysis: analysis
+
 * Demo
 
 * Libraries
@@ -253,4 +298,12 @@ _Syntax_is_not_important..._-_unless_you_are_a_programmer_, Rob Pike
 - My recommandation to start : pat (muxer), negroni(HTTP middlewares) and gorilla packages (context, sessions)
 
 * References
+- The bible, coran and torah: http://golang.org 
+- The Go blog: http://blog.golang.com
+- The Go Tour:  http://tour.golang.org
+
+* Thanks
+- The Go team
+- Thanks to [[https://github.com/soulou][@soulou]] from [[https://scalingo.com][Scalingo]]
+
 * Questions
