@@ -287,8 +287,6 @@ A list of helpers tool (non exhaustive):
 - Callgraph: callgraph
 - Static analysis: analysis
 
-* Demo
-
 * Libraries
 
 - [[https://github.com/avelino/awesome-go][Awesome go]]
