@@ -14,13 +14,13 @@ func (d *Dog) Noise() string {
 
 type Cat struct{}
 
-func (c *Cat) Noise() string {
+func (c Cat) Noise() string {
 	return "miaou"
 }
 
 func main() {
 	var animalA Animal = &Dog{}
-	var animalB Animal = &Cat{}
+	var animalB Animal = Cat{}
 	fmt.Println("Animal A:", animalA.Noise())
 	fmt.Println("Animal B:", animalB.Noise())
 }
