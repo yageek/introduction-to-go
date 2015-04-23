@@ -114,14 +114,14 @@ Example: The `os` package
 
 For lazy person: easy to work with C code with `cgo`
 
-.code ./code/cgo.go
+.code code/cgo.go
 
 * Tolerant
 
 For smart people: easy to fine tune with assembly
 
 .image ./images/assembly.png 200 _
-.code ./code/arith_386.s
+.code code/arith_386.s
 
 * Strongly typed
 
@@ -139,7 +139,7 @@ _Syntax_is_not_important..._-_unless_you_are_a_programmer_, Rob Pike
 
 `$`go`fmtmain.go`
 
-.play ./code/syntax.go
+.play code/syntax.go
 
 - Annoying at start
 - Fucking good at the end
@@ -147,36 +147,36 @@ _Syntax_is_not_important..._-_unless_you_are_a_programmer_, Rob Pike
 
 * Variables
 
-.play ./code/variables.go
+.play code/variables.go
 
 * Functions
 
-.play ./code/functions.go
+.play code/functions.go
 
 * Flow control : if else
 
-.play ./code/flow_control_1.go
+.play code/flow_control_1.go
 
 * Flow control : switch
 
-.play ./code/flow_control_2.go
+.play code/flow_control_2.go
 
 * Flow control : for
 
-.play ./code/flow_control_3.go
+.play code/flow_control_3.go
 
 * Array/Slices
 
-.play ./code/array_slice.go
+.play code/array_slice.go
 
 * Map
 
-.play ./code/map.go
+.play code/map.go
 
 * Dependencies manages with packages
 
-.code ./code/module/module.go
-.code ./code/packages.go
+.code code/module/module.go
+.code code/packages.go
 
 * Retrieve external dependencies
 
@@ -190,29 +190,29 @@ _Syntax_is_not_important..._-_unless_you_are_a_programmer_, Rob Pike
 `$`go`get`[import]`
 
 * Error management
-.play ./code/errors.go
+.play code/errors.go
 
 * Deferring 
-.play ./code/deferring.go
+.play code/deferring.go
 
 * Closures
-.play ./code/closures.go
+.play code/closures.go
 
 * Custom type
 
-.play ./code/custom_types.go
+.play code/custom_types.go
 
 * Custom type
 
-.play ./code/custom_types_2.go
+.play code/custom_types_2.go
 
 * Composition over inheritance
 
-.play ./code/composition.go
+.play code/composition.go
 
 *  
 
-.play ./code/composition_2.go
+.play code/composition_2.go
 
 * Interface and Duck typing
 - _When_I_see_a_bird_that_walks_like_a_duck_and_swims_like_a_duck_and_quacks_like_a_duck,_I_call_that_bird_a_duck_  James Whitcomb Riley
@@ -222,17 +222,17 @@ _Syntax_is_not_important..._-_unless_you_are_a_programmer_, Rob Pike
 - Interface should be considered as pointer
 
 * 
-.play ./code/interfaces.go
+.play code/interfaces.go
 
 * The empty interface
 
 - Every object implements the empty interface
 
 * Dynamic type checking
-.play ./code/interfaces_2.go
+.play code/interfaces_2.go
 
 * Type assertion
-.play ./code/interfaces_3.go
+.play code/interfaces_3.go
 
 * Concurrency
 
@@ -242,19 +242,19 @@ _Syntax_is_not_important..._-_unless_you_are_a_programmer_, Rob Pike
 - Simply call *go*
 
 * Goroutine
-.play ./code/goroutine.go
+.play code/goroutine.go
 
 * Channel
 
-.play ./code/channel.go
+.play code/channel.go
 
 * Channel
 
-.play ./code/channel_2.go
+.play code/channel_2.go
 
 * Select
 
-.play ./code/select.go
+.play code/select.go
 
 * Go come with batteries included
 * The standard library covers fast all
