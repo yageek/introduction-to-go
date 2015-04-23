@@ -53,7 +53,7 @@ Candy brewer:
 .caption The growth of Google searches for the term "golang" over the years
 
 - Dozen of Go User Groups
-- Big meetings: dotGo, GopherIndia, Gotham, GopherCon, GoCon
+- Big meetings: dotGo, GopherIndia, GothamGo, GopherCon, GoCon
 
 * Adopt Go !
 
@@ -207,10 +207,34 @@ _Syntax_is_not_important..._-_unless_you_are_a_programmer_, Rob Pike
 
 .play ./code/custom_types_2.go
 
+* Composition over inheritance
+
+.play ./code/composition.go
+
+*  
+
+.play ./code/composition_2.go
+
 * Interface and Duck typing
 - _When_I_see_a_bird_that_walks_like_a_duck_and_swims_like_a_duck_and_quacks_like_a_duck,_I_call_that_bird_a_duck_  James Whitcomb Riley
+- Go deals with polymorphism through the concept of _interface_
+- If a struct implements all the methods defined in the interface, it is compatible with it
+- No coupling between foreign packages
+- Interface should be considered as pointer
 
-* Composition over inheritance
+* 
+.play ./code/interfaces.go
+
+* The empty interface
+
+- Every object implements the empty interface
+
+* Dynamic type checking
+.play ./code/interfaces_2.go
+
+* Type assertion
+.play ./code/interfaces_3.go
+
 * Concurrency
 * Goroutine
 * Channel
