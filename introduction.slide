@@ -298,9 +298,9 @@ A list of helpers tool (non exhaustive):
 - My recommandation to start : pat (muxer), negroni(HTTP middlewares) and gorilla packages (context, sessions)
 
 * References
-- The bible, coran and torah: http://golang.org 
-- The Go blog: http://blog.golang.com
-- The Go Tour:  http://tour.golang.org
+- The bible, coran and torah: [[http://golang.org]]
+- The Go blog: [[http://blog.golang.com]]
+- The Go Tour:  [[http://tour.golang.org]]
 
 * Thanks
 - The Go team
