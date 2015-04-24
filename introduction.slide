@@ -106,8 +106,8 @@ Example: The `os` package
 
 * Garbage Collected
 
+- Feels good like C, C++ without malloc and free
 - No pointer arithmetics
-- No malloc, no free
 - Mark and Sweep GC
 
 * Tolerant
@@ -126,9 +126,9 @@ For smart people: easy to fine tune with assembly
 * Strongly typed
 
 - If it compiles, it works (usage of reflection excepted)
-- All cast are explicited
+- All cast are explicit
 
-* Go from the trench
+* Go from the trenches
 
 * One syntax to rule them all
 
@@ -256,8 +256,8 @@ _Syntax_is_not_important..._-_unless_you_are_a_programmer_, Rob Pike
 
 .play code/select.go
 
-* Go come with batteries included
-* The standard library covers fast all
+* Go comes with batteries included
+* The standard library covers almost everything
 
 - SQL Database
 - Syscall
@@ -271,7 +271,7 @@ _Syntax_is_not_important..._-_unless_you_are_a_programmer_, Rob Pike
 - Go AST, debug, sytax
 - Reflection (introspection)
 - Testing framework (assertions)
-* And a free case
+* And free swissknife
 
 A list of helpers tool (non exhaustive):
 - Format: fmt
@@ -281,7 +281,7 @@ A list of helpers tool (non exhaustive):
 - YACC clone: yacc
 - Migrations: fix
 
-* And free samples
+* And free gifts
 - Slideshow: present
 - Constant naming: stringer
 - Callgraph: callgraph
@@ -292,13 +292,18 @@ A list of helpers tool (non exhaustive):
 - [[https://github.com/avelino/awesome-go][Awesome go]]
 - Full Stack Web frameworks: Beego, Revel, Martini (Reflection)
 - HTTP Midlewares based framework: negroni
-- Abuse of HTTP midlewares
+- Abuse of HTTP middlewares
 - My recommandation to start : pat (muxer), negroni(HTTP middlewares) and gorilla packages (context, sessions)
+
+* Conclusion
+- Abuse of Go !
+- Supported by Heroku, Scalingo, Redshift, GAE...
+- Start the Go Tour:  [[http://tour.golang.org]]
 
 * References
 - The bible, coran and torah: [[http://golang.org]]
 - The Go blog: [[http://blog.golang.com]]
-- The Go Tour:  [[http://tour.golang.org]]
+
 
 * Thanks
 - The Go team
