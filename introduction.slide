@@ -68,7 +68,8 @@ Iron.io rewrites their execution job system in go:
 
 * Go is your best friend
 
-- Polyglott
+- Native and static compiled
+- Polyglot
 - Garbage Collected
 - Tolerant
 - Strongly typed
@@ -80,7 +81,7 @@ Iron.io rewrites their execution job system in go:
 - No shared libraries
 - All stuff packaged in one binary, runtime included
 
-* Polyglott
+* Polyglot
 
 - Linux, Mac Os X, FreeBSD, NetBSD, OpenBSD, MS-Windows and Plan 9 (just in case)
 - Official supported architectures : x86, amd64, arm32, arm64 - Cross compilation for free
@@ -98,7 +99,7 @@ Iron.io rewrites their execution job system in go:
 	// *_GOARCH
 	// *_GOOS_GOARCH
 
-* Polyglott
+* Polyglot
 
 Example: The `os` package
 
@@ -125,7 +126,7 @@ For smart people: easy to fine tune with assembly
 
 * Strongly typed
 
-- If it compiles, it works (usage of reflection excepted)
+- If it compiles, it (should) works (usage of reflection excepted)
 - All cast are explicit
 
 * Go from the trenches
@@ -173,7 +174,7 @@ _Syntax_is_not_important..._-_unless_you_are_a_programmer_, Rob Pike
 
 .play code/map.go
 
-* Dependencies manages with packages
+* Dependencies managed with packages
 
 .code code/module/module.go
 .code code/packages.go
@@ -189,7 +190,7 @@ _Syntax_is_not_important..._-_unless_you_are_a_programmer_, Rob Pike
            
 `$`go`get`[import]`
 
-- Retrieve automatically code from GitHub, Bitbucket, Google code (until it dies)
+- Retrieves automatically code from GitHub, Bitbucket, Launchpad, Google code (until it dies)
 
 * Error management
 .play code/errors.go
@@ -273,7 +274,7 @@ _Syntax_is_not_important..._-_unless_you_are_a_programmer_, Rob Pike
 - Go AST, debug, sytax
 - Reflection (introspection)
 - Testing framework (assertions)
-* And free swissknife
+* And a free swissknife
 
 A list of helpers tool (non exhaustive):
 - Format: fmt
@@ -295,7 +296,7 @@ A list of helpers tool (non exhaustive):
 - Full Stack Web frameworks: Beego, Revel, Martini (Reflection)
 - HTTP Midlewares based framework: negroni
 - Abuse of HTTP middlewares
-- My recommandation to start : pat (muxer), negroni(HTTP middlewares) and gorilla packages (context, sessions)
+- My recommandation to start : [[https://github.com/bmizerany/pat][pat]] (muxer), [[https://github.com/codegangsta/negroni][negroni]](HTTP middlewares) and [[www.gorillatoolkit.org/][gorilla]] packages (context, sessions)
 
 * Some awesome Go projects
 
@@ -310,12 +311,20 @@ A list of helpers tool (non exhaustive):
 - Abuse of Go !
 - Supported by Heroku, Scalingo, Redshift, GAE...
 - Start the Go Tour:  [[http://tour.golang.org]]
+- See the Go Codewalks: [[https://golang.org/doc/codewalk/]]
 
 * References
 - The bible, coran and torah: [[http://golang.org]]
 - The Go blog: [[http://blog.golang.com]]
 - Main GoDoc server: [[https://godoc.org]]
 - Google: search for *golang*
+
+* People to follow:
+
+- Rob Pike, Go Team Lead - [[https://twitter.com/rob_pike][@rob_pike]]
+- Francesc Compoy, Go Evangelist - [[https://twitter.com/francesc][@francesc]]
+- Jessie Frazelle, Docker developer - [[https://twitter.com/frazelledazzell][@frazelledazzell]]
+- Jeremy Saenz, martini, negroni developer - [[https://twitter.com/codegangsta][@codegangsta]]
 
 * Thanks
 - The Go team
